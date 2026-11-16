@@ -1,0 +1,42 @@
+{
+  "name": "n8n-nodes-dialgem",
+  "version": "0.1.0",
+  "description": "n8n trigger node for Dialgem: start a workflow when a call starts, ends or is analyzed.",
+  "keywords": [
+    "n8n-community-node-package",
+    "dialgem",
+    "voice ai"
+  ],
+  "license": "MIT",
+  "homepage": "https://dialgem.com",
+  "author": {
+    "name": "Dialgem"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && node scripts/copy-assets.js",
+    "test": "tsc && node --test dist/test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/credentials",
+    "dist/nodes"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/DialgemApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/DialgemTrigger/DialgemTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "n8n-workflow": "^1.82.0",
+    "typescript": "^5.6.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
