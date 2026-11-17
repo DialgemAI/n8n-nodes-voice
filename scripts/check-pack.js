@@ -13,6 +13,7 @@ const required = [
   'package.json',
   'README.md',
   'LICENSE',
+  'NOTICE',
 ];
 const missing = required.filter((r) => !files.includes(r));
 const stray = files.filter((p) => /^(test|nodes|credentials|scripts|\.github)\//.test(p) || /\.ts$/.test(p) || p.startsWith('dist/test/'));

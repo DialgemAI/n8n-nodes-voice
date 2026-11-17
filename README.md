@@ -32,4 +32,8 @@ git tag v0.1.0 && git push origin v0.1.0
 
 The Release workflow checks that the tagged commit is on `main` and that the tag matches `package.json`, runs the tests, checks the package contents, and publishes to npm with provenance. A version with a hyphen (`0.2.0-beta.1`) publishes to the `next` dist-tag. The workflow runs in the `npm` GitHub environment, where required reviewers can gate each release.
 
-MIT licensed.
+## License
+
+MIT. Copyright 2026 Achroweb Solutions. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+Dialgem is a product of Achroweb Solutions ([dialgem.com](https://dialgem.com)). This package is not made by or affiliated with n8n.

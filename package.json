@@ -27,7 +27,8 @@
   },
   "files": [
     "dist/credentials",
-    "dist/nodes"
+    "dist/nodes",
+    "NOTICE"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
