@@ -1,5 +1,5 @@
 {
-  "name": "@dialgem/n8n-nodes-dialgem",
+  "name": "@dialgem/n8n-nodes-voice",
   "version": "0.1.0",
   "description": "n8n trigger node for Dialgem: start a workflow when a call starts, ends or is analyzed.",
   "keywords": [

@@ -1,13 +1,13 @@
 name: Release
 
-# Publishes @dialgem/n8n-nodes-dialgem to npm when a tag `v<version>` is pushed, e.g.
+# Publishes @dialgem/n8n-nodes-voice to npm when a tag `v<version>` is pushed, e.g.
 #
 #   git tag v0.1.0 && git push origin v0.1.0
 #
 # Same method as @dialgem/sdk (dialgem-sdk-typescript). Provenance is attached, which n8n requires
 # for a verified community node.
 #
-# Auth: npm trusted publishing (OIDC, no stored token), configured for @dialgem/n8n-nodes-dialgem on
+# Auth: npm trusted publishing (OIDC, no stored token), configured for @dialgem/n8n-nodes-voice on
 # npmjs.com -> Settings -> Trusted Publisher -> GitHub Actions (repo DialgemAI/n8n-nodes-dialgem,
 # workflow release.yml, environment npm). An `NPM_TOKEN` secret is used instead if set; the very
 # first publish of a new package needs it, because the package must exist before a trusted
