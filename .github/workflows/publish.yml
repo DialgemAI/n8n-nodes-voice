@@ -1,0 +1,28 @@
+name: Publish
+
+# Publishes to npm with provenance (which n8n requires for verified community nodes).
+# Runs only when you publish a GitHub release, so nothing goes out by accident.
+# Needs a repository secret NPM_TOKEN (an npm automation token with publish rights).
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write # lets npm sign the provenance statement
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - run: npm ci
+      - run: npm test
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
