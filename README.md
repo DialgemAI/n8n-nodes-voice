@@ -1,4 +1,4 @@
-# n8n-nodes-dialgem
+# @dialgem/n8n-nodes-dialgem
 
 An [n8n](https://n8n.io) trigger node for [Dialgem](https://dialgem.com): start a workflow when a call starts, ends, or has been analyzed.
 
