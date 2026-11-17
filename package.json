@@ -11,10 +11,10 @@
   "homepage": "https://dialgem.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DialgemAI/n8n-nodes-dialgem.git"
+    "url": "git+https://github.com/DialgemAI/n8n-nodes-voice.git"
   },
   "bugs": {
-    "url": "https://github.com/DialgemAI/n8n-nodes-dialgem/issues"
+    "url": "https://github.com/DialgemAI/n8n-nodes-voice/issues"
   },
   "author": {
     "name": "Dialgem"

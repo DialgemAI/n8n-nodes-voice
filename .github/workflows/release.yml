@@ -8,7 +8,7 @@ name: Release
 # for a verified community node.
 #
 # Auth: npm trusted publishing (OIDC, no stored token), configured for @dialgem/n8n-nodes-voice on
-# npmjs.com -> Settings -> Trusted Publisher -> GitHub Actions (repo DialgemAI/n8n-nodes-dialgem,
+# npmjs.com -> Settings -> Trusted Publisher -> GitHub Actions (repo DialgemAI/n8n-nodes-voice,
 # workflow release.yml, environment npm). An `NPM_TOKEN` secret is used instead if set; the very
 # first publish of a new package needs it, because the package must exist before a trusted
 # publisher can be configured for it.
