@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+No change to the node. This release is published from GitHub Actions, so it carries npm provenance, which `0.1.0` (published by hand) does not.
+
 ## 0.1.0
 
 First release.
