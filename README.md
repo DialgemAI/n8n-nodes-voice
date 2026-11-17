@@ -22,6 +22,14 @@ npm test        # compiles, then runs the tests
 npm run build
 ```
 
-Not yet published to npm and not yet submitted to n8n.
+## Release
+
+Bump `version` in `package.json`, add a CHANGELOG entry, merge to `main`, then push a matching tag:
+
+```
+git tag v0.1.0 && git push origin v0.1.0
+```
+
+The Release workflow checks that the tagged commit is on `main` and that the tag matches `package.json`, runs the tests, checks the package contents, and publishes to npm with provenance. A version with a hyphen (`0.2.0-beta.1`) publishes to the `next` dist-tag. The workflow runs in the `npm` GitHub environment, where required reviewers can gate each release.
 
 MIT licensed.
